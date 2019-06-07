@@ -53,12 +53,12 @@ Write out your proposed algorithm in plain English or pseudocode and give the ru
 """
 INPUT: n (story of building)
 OUTPUT: f (floor that of dropped from -> egg breaks)
-
+"""
 # for i in range(0, n)
-   drop the egg
-        if the egg breaks
-            return i as f
+#   drop the egg
+#        if the egg breaks
+#            return i as f
 
-Runtime 0(n)
-This is the most efficient algorithm because as the drop height increases, the likelyhood of f being reached does also. This function would run 1 time in real life and the egg would break.
+#Runtime 0(n)
+#This is the most efficient algorithm because as the drop height increases, the likelyhood of f being reached does also. This function would run 1 time in real life and the egg would break.
 ```
