@@ -54,7 +54,7 @@ Write out your proposed algorithm in plain English or pseudocode and give the ru
 # arr = [0, ... n]
 
 # def binary_search(arr, f)
-#     low = 0, high= len(arr - 1), mid = (high-low) // 2  *YTest the floor level w/out - 1*
+#     low = 0, high= len(arr - 1), mid = (high-low) // 2  *Test the floor level w/out - 1*
 #     if f == arr[mid]
 #          return mid
 #      elif f < arr[mid]
