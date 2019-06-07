@@ -96,10 +96,18 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
 
-
+        """
+        pseudocode -
+            set light on
+            while light on
+                check of items are sorted:
+                    if they are
+                        turn the light off
+                    else
+                        switch the larger value with the smaller value
+        """
+            
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`
