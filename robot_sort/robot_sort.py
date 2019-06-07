@@ -112,7 +112,8 @@ class SortingRobot:
                 if self.compare_item() == 1:
                     self.swap_item()
             
-            # while the held item's value is None, move left
+            # At this point we've found the smallest number and want to take it back to "None"
+            # while the held item's value is not None, move left
             while self.compare_item() != None:
                 self.move_left()
             
@@ -123,12 +124,13 @@ class SortingRobot:
             if self.can_move_right():
                 self.move_right()
                 self.swap_item()
+                continue
             else: 
                 break
 
             
         
-if __name__ == "__main__":
+if __name__ == "__main__": # !what does this do
     # Test our your implementation from the command line
     # with `python robot_sort.py`
 
