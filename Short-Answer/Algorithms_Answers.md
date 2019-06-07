@@ -18,12 +18,12 @@ b)  sum = 0 0(c)
         j += 1
         for k in range(j + 1, n): # O(n)
           k += 1
-          for l in range(k + 1, 10 + k): # O(n)
+          for l in range(k + 1, 10 + k):
             l += 1
             sum += 1
 ```
 
-#### Runtime = O(n) \* 4 = O(n^4)
+#### Runtime = O(n) \* 3 = O(n^3)
 
 #### Justification: this algorithm increases the number of operations quadratically with respect to the input size of n because of the nested for loops.
 
@@ -49,16 +49,17 @@ Write out your proposed algorithm in plain English or pseudocode and give the ru
 
 ```python
 
-# def min_floor(n):
-"""
-INPUT: n (story of building)
-OUTPUT: f (floor that of dropped from -> egg breaks)
-"""
-# for i in range(0, n)
-#   drop the egg
-#        if the egg breaks
-#            return i as f
+# F is a essentially a sorted array. This is why we will use Binary search O(log n) to determine the value of f such that the number of dropped eggs is minimized
 
-#Runtime 0(n)
-#This is the most efficient algorithm because as the drop height increases, the likelyhood of f being reached does also. This function would run 1 time in real life and the egg would break.
+# def binary_search(n, f)
+#     low = 0, high= n, mid = (high-low) // 2
+#     if f == sorted_arr[mid]
+#          return mid
+#      elif f < sorted_arr[mid]
+#          return binary_searh(sorted_arr[:midpoint])
+#      else
+#         return binary_search(sorted_arr[midpoint:])
+
+#
+
 ```
