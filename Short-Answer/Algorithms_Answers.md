@@ -51,14 +51,16 @@ Write out your proposed algorithm in plain English or pseudocode and give the ru
 
 # F is a essentially a sorted array. This is why we will use Binary search O(log n) to determine the value of f such that the number of dropped eggs is minimized
 
-# def binary_search(n, f)
-#     low = 0, high= n, mid = (high-low) // 2
-#     if f == sorted_arr[mid]
+# arr = [0, ... n]
+
+# def binary_search(arr, f)
+#     low = 0, high= len(arr - 1), mid = (high-low) // 2
+#     if f == arr[mid]
 #          return mid
-#      elif f < sorted_arr[mid]
-#          return binary_searh(sorted_arr[:midpoint])
+#      elif f < arr[mid]
+#          return binary_searh(arr[:midpoint])
 #      else
-#         return binary_search(sorted_arr[midpoint:])
+#         return binary_search(arr[midpoint:])
 
 #
 
